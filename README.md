@@ -22,3 +22,7 @@ The following guides illustrate how to use some features concretely:
 * [Serving Web Content with Spring MVC](https://spring.io/guides/gs/serving-web-content/)
 * [Building REST services with Spring](https://spring.io/guides/tutorials/bookmarks/)
 
+### Structure :
+* com.resourceserver.security.WebSecurity behind scene it does filtering role , etc 
+* com.resourceserver.security.KeycloakRoleConverter  extracts role/authority from jwt and add it to GrantedAuthority then register it back to com.resourceserver.security.WebSecurity
+
