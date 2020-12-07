@@ -22,6 +22,10 @@ The following guides illustrate how to use some features concretely:
 * [Serving Web Content with Spring MVC](https://spring.io/guides/gs/serving-web-content/)
 * [Building REST services with Spring](https://spring.io/guides/tutorials/bookmarks/)
 
+### Keycloak server authentication process :
+![alt text](./src/main/resources/images/auth-get.png "get code")
+![alt text](./src/main/resources/images/auth-post.png "get authentication/jwt code")
+![alt text](./src/main/resources/images/endpoint.png "endpoint")
 ### Structure :
 * com.resourceserver.security.WebSecurity behind scene it does filtering role , etc 
 * com.resourceserver.security.KeycloakRoleConverter  extracts role/authority from jwt and add it to GrantedAuthority then register it back to com.resourceserver.security.WebSecurity
