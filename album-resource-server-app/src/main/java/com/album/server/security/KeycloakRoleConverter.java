@@ -15,6 +15,8 @@ public class KeycloakRoleConverter implements Converter<Jwt, Collection<GrantedA
     @SuppressWarnings("unchecked")
 	@Override
     public Collection<GrantedAuthority> convert(final Jwt jwt) {
+    	
+    	System.out.println("album microservice jwt-> "+jwt.getTokenValue());
   
         Map<String, Object> realmAccess = (Map<String, Object>) jwt.getClaims().get("realm_access");
 
