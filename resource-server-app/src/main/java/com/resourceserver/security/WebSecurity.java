@@ -7,7 +7,7 @@ import org.springframework.security.config.annotation.web.configuration.EnableWe
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 import org.springframework.security.oauth2.server.resource.authentication.JwtAuthenticationConverter;
 
-@EnableGlobalMethodSecurity(securedEnabled=true,prePostEnabled=true)
+@EnableGlobalMethodSecurity(securedEnabled = true, prePostEnabled = true)
 @EnableWebSecurity
 public class WebSecurity extends WebSecurityConfigurerAdapter {
 
@@ -26,5 +26,19 @@ public class WebSecurity extends WebSecurityConfigurerAdapter {
 				.jwtAuthenticationConverter(jwtAuthenticationConverter);
 
 	}
+
+//	@Bean
+//	CorsConfigurationSource corsConfigurationSource() {
+//		CorsConfiguration corsConfiguration = new CorsConfiguration();
+//		corsConfiguration.setAllowedOrigins(Arrays.asList("*"));
+//		corsConfiguration.setAllowedMethods(Arrays.asList("GET","POST"));
+//		corsConfiguration.setAllowedHeaders(Arrays.asList("*"));
+//		
+//		UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
+//		source.registerCorsConfiguration("/**", corsConfiguration);
+//		
+//		return source;
+//	}
+//	
 
 }

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Mini-Shop</title>
+  <!-- <link rel="stylesheet" href="assets/styles/app.css"> -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="./app.js" defer></script>
+</head>
+
+<body>
+  <h1>Index page</h1>
+
+  <div id="stateValue"></div>
+  <div><input id="stateValueButton" type="button" value="Generate state value" /></div>
+
+  <div id="codeVerifierValue"></div>
+  <div><input id="codeVerifierValueButton" type="button" value="Generate Code Verifier value" /></div>
+
+  <div id="codeChallengeValue"></div>
+  <div><input id="codeChallengeValueButton" type="button" value="Generate Code Challenge value"  /></div>
+  <br />
+  <div><input type="button"  id="getAuthCodeButton" value="Get Auth Code"  /></div>
+
+  <p>Access token: <span id="accessToken"></span></p>
+
+  <br />
+  <div><input type="button" value="Load" onclick="getInfoFromResourceServer()" /></div>
+
+</body>
+
+</html>
